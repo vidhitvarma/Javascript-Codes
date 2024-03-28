@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section class="game">
+            <button class="game__button" id="game__new">🎮New Game</button>
+            <img src="./dice/dice-1.png" alt="dice" class="dice hidden">
+            <button class="game__button roll__dice">🎲 Roll!</button>
+            <button class="game__button hold__score">🕹️ Hold!</button>
+        </section>
+        <section class="player player-1 player__active">
+            <p class="player__header">Player 1</p>
+            <h1 class="player__score">0</h1>
+            <div class="current__score">
+                <p class="current__header">current</p>
+                <p class="current__point">0</p>
+            </div>
+        </section>
+        <section class="player player-2">
+            <p class="player__header">Player 2</p>
+            <h1 class="player__score">0</h1>
+            <div class="current__score">
+                <p class="current__header">current</p>
+                <p class="current__point">0</p>
+            </div>
+        </section>
+        
+    </main>
+    <section class="rules-overlay">
+        <div class="rules hide">
+            <p class="close__window">&times;</p>
+            <ul>
+                <li>First to hundred points win</li>
+                <li>If dice hits 1 you loose everthing in current score box</li>
+                <li>Press hold to add current score to main scoreboard</li>
+            </ul>
+        </div>
+        <div class="overlay hide"></div>
+        <button class="rules__button">Rules</button>
+        
+    </section>
+   
+    
+    <script src="app.js"></script>
+</body>
+</html>

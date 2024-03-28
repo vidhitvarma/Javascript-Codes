@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+   
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+    padding: 2.5rem;
+}
+
+
+/* header */
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.navigation__bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    font-size: 1.5rem;
+    font-family: inherit;
+    border-radius: 0.25rem;
+    padding:1rem 1.5rem;
+    transition: all 0.25s ease-in;
+    border: none;
+}
+
+.button:is(:hover,:active){
+    cursor: pointer;
+    color: #eee;
+    background-color: #3e3e3e;
+}
+
+.header h1{
+    margin: 2rem 0;
+}
+
+.question__box{
+    position: relative;
+    font-size: 4.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question__mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    color: #222;
+    z-index: 2;
+}
+
+.line{
+    width: 100%;
+    height: 0.25rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: -50%;
+    z-index: 1;
+}
+
+/* main */
+.main{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+.input__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#input__number{
+    font-family: inherit;
+    font-size: 3rem;
+    padding: 1rem 0;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    border: 0.25rem solid #fff;
+    border-radius: 0.25rem;
+    background-color: #222;
+    color: #fff;
+}
+
+.submit__button{ 
+    padding: 1rem;
+}
+
+.score__keeper{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.score__box p:first-of-type{
+    margin-bottom: 1rem;
+}
+
+/* 
+asdasdasdasdasdasdasdsadas
+asdlpkokljhl */
